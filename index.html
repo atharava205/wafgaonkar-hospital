@@ -1,0 +1,154 @@
+<!-- Wafgaonkar Hospital Website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wafgaonkar Hospital</title>
+  <meta name="description" content="Wafgaonkar Hospital offers top orthopedic and accidental care in India. Trusted by the community since 2000.">
+  <meta name="keywords" content="Wafgaonkar Hospital, Orthopedic, Accidental Care, Emergency, India Hospital">
+  <meta name="author" content="Wafgaonkar Hospital">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: -1;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      const sections = ['home', 'services', 'doctors', 'contact', 'appointment'];
+      sections.forEach(sec => {
+        document.getElementById(sec).classList.add('hidden');
+      });
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-gradient-to-r from-pink-100 via-yellow-100 to-blue-100 text-gray-800">
+  <header class="bg-gradient-to-r from-purple-700 via-pink-600 to-blue-600 text-white p-8 text-center text-4xl font-extrabold shadow-xl">
+    Wafgaonkar Hospital
+  </header>
+
+  <nav class="flex justify-center bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 shadow-lg">
+    <button onclick="showSection('home')" class="mx-4 hover:underline font-semibold">Home</button>
+    <button onclick="showSection('services')" class="mx-4 hover:underline font-semibold">Services</button>
+    <button onclick="showSection('doctors')" class="mx-4 hover:underline font-semibold">Doctors</button>
+    <button onclick="showSection('contact')" class="mx-4 hover:underline font-semibold">Contact</button>
+    <button onclick="showSection('appointment')" class="mx-4 hover:underline font-semibold">Book Appointment</button>
+  </nav>
+
+  <section id="home" class="p-10 text-center bg-white rounded-lg shadow-md m-6">
+    <h2 class="text-3xl font-bold text-purple-700">Welcome to Wafgaonkar Hospital</h2>
+    <p class="mt-4 text-lg">Your health is our priority. Providing quality orthopedic and accidental care since 2000.</p>
+    <div class="mt-6 text-left text-gray-700">
+      <h3 class="text-xl font-semibold text-purple-600">Why Choose Us?</h3>
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Experienced and compassionate doctors</li>
+        <li>Modern facilities and cutting-edge equipment</li>
+        <li>24/7 emergency care for accident cases</li>
+        <li>Personalized treatment plans for every patient</li>
+      </ul>
+      <h3 class="text-xl font-semibold text-purple-600 mt-6">Trusted by the Community</h3>
+      <p class="mt-2">Wafgaonkar Hospital has been serving patients across the region for over two decades. Our dedication to ethical medical practices and patient satisfaction has earned us the trust of thousands.</p>
+      <h3 class="text-xl font-semibold text-purple-600 mt-6">Our Mission</h3>
+      <p class="mt-2">To deliver high-quality, accessible, and affordable healthcare in Orthopedics and Accidental Care. We are committed to continuous improvement in our services to better serve you and your family.</p>
+      <h3 class="text-xl font-semibold text-purple-600 mt-6">Patient Testimonials</h3>
+      <blockquote class="mt-4 italic border-l-4 border-purple-400 pl-4">"Thanks to Dr. K. Wafgaonkar, I'm walking again without pain. Their care is unmatched!" – Rajesh P.</blockquote>
+      <blockquote class="mt-2 italic border-l-4 border-purple-400 pl-4">"The emergency staff saved my father's life. Forever grateful to the team at Wafgaonkar Hospital." – Asha D.</blockquote>
+      <h3 class="text-xl font-semibold text-purple-600 mt-6">Health Tips</h3>
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Exercise regularly to strengthen your bones and joints.</li>
+        <li>Wear proper safety gear while driving or riding a bike.</li>
+        <li>Stay hydrated and maintain a balanced diet.</li>
+        <li>Visit us for routine orthopedic checkups to detect issues early.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" class="hidden p-10 bg-white rounded-lg shadow-md m-6">
+    <h2 class="text-2xl font-bold text-purple-700">Our Services</h2>
+    <ul class="list-disc list-inside mt-4 text-lg">
+      <li>Orthopedic Care</li>
+      <li>Accidental Emergency Treatment</li>
+      <li>Outpatient Consultations</li>
+    </ul>
+  </section>
+
+  <section id="doctors" class="hidden p-10 bg-white rounded-lg shadow-md m-6">
+    <h2 class="text-2xl font-bold text-purple-700">Our Doctors</h2>
+    <ul class="mt-4 text-lg">
+      <li>Dr. K. Wafgaonkar – Orthopedic Specialist</li>
+      <li>Dr. A. Wafgaonkar – Accidental Care Expert</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="hidden p-10 bg-white rounded-lg shadow-md m-6">
+    <h2 class="text-2xl font-bold text-purple-700">Contact Us</h2>
+    <p class="mt-4 text-lg">Phone: 8624925919</p>
+    <p class="text-lg">Email: atharvawafgaonkar27@gmail.com</p>
+    <p class="text-lg">Address: Wafgaonkar Hospital, Wada Road, Khed Rajgurunagar, Pune, Maharashtra, India</p>
+    <div class="mt-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.364321464598!2d73.87891851077869!3d18.856032082229955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd352cc08baf71%3A0xbf8b816febf6e6e2!2sWAFGAONKAR%20HOSPITAL!5e1!3m2!1sen!2sin!4v1751718542970!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </div>
+  </section>
+
+  <section id="appointment" class="hidden p-10 bg-white rounded-lg shadow-md m-6">
+    <h2 class="text-2xl font-bold text-purple-700">Book an Appointment</h2>
+    <form id="appointmentForm" class="mt-6 space-y-4">
+      <input type="text" name="patientName" placeholder="Patient Name" required class="w-full p-2 border rounded">
+      <input type="tel" name="contactNumber" placeholder="Contact Number" required class="w-full p-2 border rounded">
+      <input type="email" name="email" placeholder="Email Address" required class="w-full p-2 border rounded">
+      <input type="datetime-local" name="appointmentDateTime" required class="w-full p-2 border rounded">
+      <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Submit</button>
+    </form>
+    <div id="formStatus" class="mt-4 text-lg font-semibold"></div>
+  </section>
+
+  <script>
+    const form = document.getElementById('appointmentForm');
+    const statusDiv = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const formData = Object.fromEntries(data.entries());
+
+      try {
+        const response = await fetch('https://formspree.io/f/mzbnyvqe', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+          statusDiv.textContent = 'Appointment booked successfully!';
+          statusDiv.className = 'text-green-600 mt-4 text-lg font-semibold';
+          form.reset();
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      } catch (error) {
+        statusDiv.textContent = 'Failed to book appointment. Please try again.';
+        statusDiv.className = 'text-red-600 mt-4 text-lg font-semibold';
+      }
+    });
+  </script>
+</body>
+
+</html>
